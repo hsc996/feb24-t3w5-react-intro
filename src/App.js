@@ -1,0 +1,32 @@
+import './App.css';
+
+const food = [
+  "bananas",
+  "bacon",
+  "pizza",
+  "mango",
+  "nachos",
+  "KFC",
+  "sushi",
+  "spaghetti"
+]
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello world!</h1>
+    
+    <ul>
+      {
+        food.map(individualFoodItem => {
+          return <li>
+          {individualFoodItem}
+          </li>
+        })
+      }
+    </ul>
+    </div>
+  );
+}
+
+export default App;
